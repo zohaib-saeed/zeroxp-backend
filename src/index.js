@@ -27,7 +27,7 @@ app.use(cookieParser());
 
 // Home route
 app.get("/", async (req, res) => {
-  res.send(`Running on port ${PORT}`);
+  res.send(`Running on port ${PORT} `);
 });
 
 const URL =
