@@ -16,7 +16,8 @@ const userSchema = new mongoose.Schema(
         message: "Invalid email format",
       },
     },
-    password: { type: String, required: true },
+    linkedinId: { type: String, unique: true }, // Field for LinkedIn ID of the user (Socal login)
+    password: { type: String },
   },
   { timestamps: true } // automatically manages createdAt and updatedAt fields
 );
